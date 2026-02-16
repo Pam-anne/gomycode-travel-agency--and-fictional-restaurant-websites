@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f8fafc;
+  color: #333;
+}
+
+.navbar {
+  background-color: #0d3b66 !important;
+}
+.navbar .nav-link {
+  color: white !important;
+}
+.navbar .nav-link:hover {
+  color: #f95738 !important;
+}
+
+.hero {
+  background: url("../images/hero.png") center/cover no-repeat;
+  height: 90vh;
+  position: relative;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(13, 59, 102, 0.45);
+}
+.hero .hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.btn-accent {
+  background-color: #f95738;
+  color: white;
+  border: none;
+}
+.btn-accent:hover {
+  background-color: rgb(247.8058536585, 53.563902439, 16.3941463415);
+}
+
+.card {
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.card .btn-outline-accent {
+  border-color: #f95738;
+  color: #f95738;
+}
+.card .btn-outline-accent:hover {
+  background-color: #f95738;
+  color: white;
+}
+.card img {
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#tours {
+  background-color: #f9fafc;
+}
+#tours .tour-card {
+  border-radius: 15px;
+  background: white;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+#tours .tour-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+#tours .tour-card i {
+  color: #f95738;
+}
+#tours .tour-card h4 {
+  color: #0d3b66;
+}
+#tours .tour-card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+footer {
+  background-color: #0d3b66;
+}
+footer a {
+  font-size: 1.4rem;
+  color: white;
+  transition: 0.3s;
+}
+footer a:hover {
+  color: #f95738;
+}
+
+@media (max-width: 992px) {
+  .hero {
+    height: 70vh;
+    text-align: center;
+  }
+  .hero .hero-content h1 {
+    font-size: 2.2rem;
+  }
+  .hero .hero-content p {
+    font-size: 1rem;
+  }
+  .card img {
+    height: 180px;
+  }
+}
+@media (max-width: 768px) {
+  .navbar-brand img {
+    height: 30px;
+  }
+  .hero {
+    height: 60vh;
+    background-position: center top;
+  }
+  .hero .hero-content h1 {
+    font-size: 1.8rem;
+  }
+  .hero .hero-content p {
+    font-size: 0.95rem;
+  }
+  .tour-card {
+    padding: 2rem 1rem;
+  }
+  footer p {
+    font-size: 0.9rem;
+  }
+  footer a {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 576px) {
+  .hero {
+    height: 50vh;
+  }
+  .hero .hero-content h1 {
+    font-size: 1.5rem;
+  }
+  .hero .hero-content p {
+    font-size: 0.9rem;
+  }
+  .hero .btn-accent {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+  h2, h4 {
+    font-size: 1.2rem;
+  }
+  .card img {
+    height: 150px;
+  }
+  form {
+    padding: 0 1rem;
+  }
+  footer p {
+    font-size: 0.8rem;
+  }
+  footer a {
+    margin: 0 0.4rem;
+  }
+}/*# sourceMappingURL=main.css.map */

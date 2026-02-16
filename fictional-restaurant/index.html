@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maridadi Bistro</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Maridadi Bistro</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section
+      id="home"
+      class="hero-section d-flex align-items-center justify-content-center text-center text-light"
+    >
+      <div class="overlay"></div>
+      <div class="content">
+        <h1 class="display-4 fw-bold">Welcome to Maridadi Bistro</h1>
+        <p class="lead">Where Taste Meets Elegance</p>
+        <a href="#menu" class="btn btn-primary mt-3">Explore Our Menu</a>
+      </div>
+    </section>
+
+    <!-- MENU SECTION -->
+    <section id="menu" class="container my-5 text-center">
+      <h2 class="mb-4 fw-bold">Our Menu</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="./images/grilled-chicken.png"
+              class="card-img-top"
+              alt="Dish 1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Grilled Chicken</h5>
+              <p class="card-text">
+                Tender chicken marinated in our special herbs and grilled to
+                perfection.
+              </p>
+              <p class="fw-bold text-primary">$25</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="./images/seafood-pasta.jpg"
+              class="card-img-top"
+              alt="Dish 2"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Seafood Pasta</h5>
+              <p class="card-text">
+                Delicious pasta served with fresh shrimp and creamy sauce.
+              </p>
+              <p class="fw-bold text-primary">$18</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="./images/green-salad.jpg"
+              class="card-img-top"
+              alt="Dish 3"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Garden Salad</h5>
+              <p class="card-text">
+                A mix of fresh greens, tomatoes, and cucumbers tossed in
+                vinaigrette.
+              </p>
+              <p class="fw-bold text-primary">$10</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="./images/eggplant roll.png"
+              class="card-img-top"
+              alt="Dish 3"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Eggplant Rolls with Potatoes</h5>
+              <p class="card-text">
+                Delicious eggplant rolls cooked dish with potatoes bread and
+                seasonings.
+              </p>
+              <p class="fw-bold text-primary">$12</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="./images/burger.png" class="card-img-top" alt="Dish 3" />
+            <div class="card-body">
+              <h5 class="card-title">Burger</h5>
+              <p class="card-text">
+                High quality beef medium to well with cheese and bacon on a
+                multigrain bun.
+              </p>
+              <p class="fw-bold text-primary">$16</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="./images/fries.png" class="card-img-top" alt="Dish 3" />
+            <div class="card-body">
+              <h5 class="card-title">French Fries</h5>
+              <p class="card-text">
+                Crispy, golden-brown, and perfectly salted fries.Topped with
+                options like melted cheese, chili, or bacon.
+              </p>
+              <p class="fw-bold text-primary">$13</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT US SECTION -->
+    <section id="about" class="container my-5">
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <img src="./images/restaurant.png" class="img-fluid rounded" alt="Our Chef" />
+        </div>
+        <div class="col-md-6">
+          <h2 class="fw-bold mb-3">About Us</h2>
+          <p>
+            At Maridadi Bistro, we bring you a blend of modern dining and
+            authentic flavors. Our chefs are passionate about crafting meals
+            that not only taste amazing but also tell a story.
+          </p>
+          <p>
+            Whether you’re here for a quick lunch or a fine dinner, we promise a
+            memorable dining experience.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section bg-light py-5">
+      <div class="container">
+        <h2 class="text-center mb-4 fw-bold">Contact Us</h2>
+        <form class="mx-auto" style="max-width: 600px">
+          <div class="mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Your Name"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Your Email"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <textarea
+              class="form-control"
+              rows="4"
+              placeholder="Your Message"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-light text-center py-3">
+      <p class="mb-0">
+        © 2026 Maridadi Bistro | Follow us on
+        <i class="bi bi-facebook mx-1"></i>
+        <i class="bi bi-instagram mx-1"></i>
+        <i class="bi bi-twitter mx-1"></i>
+      </p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,208 @@
+// RESET STYLES
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
+
+// VARIABLES
+$primary-color: #0d6efd;
+$overlay-color: rgba(0, 0, 0, 0.5);
+
+// HERO SECTION
+.hero-section {
+  background: url('../images/hero.png') center center / cover no-repeat;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background: $overlay-color;
+  }
+
+  .content {
+    position: relative;
+    z-index: 2;
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 1.25rem;
+      margin-top: 0.5rem;
+    }
+
+    .btn {
+      background-color: $primary-color;
+      border: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: darken($primary-color, 10%);
+      }
+    }
+  }
+}
+
+// MENU CARDS
+.card {
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  img {
+    height: 200px;
+    object-fit: cover;
+  }
+}
+
+// FOOTER
+footer {
+  background-color: #111;
+  color: #ddd;
+
+  i {
+    cursor: pointer;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+
+
+// MEDIA QUERIES
+ 
+
+//  For large tablets and small laptops 
+@media (max-width: 992px) {
+  .hero-section {
+    height: 80vh;
+
+    .content h1 {
+      font-size: 2.5rem;
+    }
+
+    .content p {
+      font-size: 1.1rem;
+    }
+  }
+
+  .card img {
+    height: 180px;
+  }
+
+  #about img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+// For tablets (width ≤ 768px) 
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.3rem;
+  }
+
+  .hero-section {
+    height: 70vh;
+    background-position: center top;
+
+    .content h1 {
+      font-size: 2rem;
+    }
+
+    .content p {
+      font-size: 1rem;
+    }
+
+    .btn {
+      padding: 0.6rem 1.4rem;
+      font-size: 0.9rem;
+    }
+  }
+
+  #menu .card img {
+    height: 160px;
+  }
+
+  #about .row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #about img {
+    margin-bottom: 1.5rem;
+  }
+
+  footer p {
+    font-size: 0.9rem;
+  }
+}
+
+// For small phones (width ≤ 576px) 
+@media (max-width: 576px) {
+  .hero-section {
+    height: 60vh;
+
+    .content h1 {
+      font-size: 1.6rem;
+    }
+
+    .content p {
+      font-size: 0.9rem;
+    }
+
+    .btn {
+      padding: 0.5rem 1.2rem;
+      font-size: 0.85rem;
+    }
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  .card img {
+    height: 140px;
+  }
+
+  #contact form {
+    padding: 0 1rem;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+  }
+
+  footer i {
+    font-size: 1rem;
+    margin: 0 0.3rem;
+  }
+}
