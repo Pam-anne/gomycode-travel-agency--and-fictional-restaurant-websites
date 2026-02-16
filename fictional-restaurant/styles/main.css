@@ -77,4 +77,86 @@ footer i {
 }
 footer i:hover {
   color: #0d6efd;
+}
+
+@media (max-width: 992px) {
+  .hero-section {
+    height: 80vh;
+  }
+  .hero-section .content h1 {
+    font-size: 2.5rem;
+  }
+  .hero-section .content p {
+    font-size: 1.1rem;
+  }
+  .card img {
+    height: 180px;
+  }
+  #about img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.3rem;
+  }
+  .hero-section {
+    height: 70vh;
+    background-position: center top;
+  }
+  .hero-section .content h1 {
+    font-size: 2rem;
+  }
+  .hero-section .content p {
+    font-size: 1rem;
+  }
+  .hero-section .btn {
+    padding: 0.6rem 1.4rem;
+    font-size: 0.9rem;
+  }
+  #menu .card img {
+    height: 160px;
+  }
+  #about .row {
+    flex-direction: column;
+    text-align: center;
+  }
+  #about img {
+    margin-bottom: 1.5rem;
+  }
+  footer p {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 576px) {
+  .hero-section {
+    height: 60vh;
+  }
+  .hero-section .content h1 {
+    font-size: 1.6rem;
+  }
+  .hero-section .content p {
+    font-size: 0.9rem;
+  }
+  .hero-section .btn {
+    padding: 0.5rem 1.2rem;
+    font-size: 0.85rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+  .card img {
+    height: 140px;
+  }
+  #contact form {
+    padding: 0 1rem;
+  }
+  footer p {
+    font-size: 0.8rem;
+  }
+  footer i {
+    font-size: 1rem;
+    margin: 0 0.3rem;
+  }
 }/*# sourceMappingURL=main.css.map */

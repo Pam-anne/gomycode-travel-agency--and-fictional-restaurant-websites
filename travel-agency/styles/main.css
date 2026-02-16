@@ -99,4 +99,74 @@ footer a {
 }
 footer a:hover {
   color: #f95738;
+}
+
+@media (max-width: 992px) {
+  .hero {
+    height: 70vh;
+    text-align: center;
+  }
+  .hero .hero-content h1 {
+    font-size: 2.2rem;
+  }
+  .hero .hero-content p {
+    font-size: 1rem;
+  }
+  .card img {
+    height: 180px;
+  }
+}
+@media (max-width: 768px) {
+  .navbar-brand img {
+    height: 30px;
+  }
+  .hero {
+    height: 60vh;
+    background-position: center top;
+  }
+  .hero .hero-content h1 {
+    font-size: 1.8rem;
+  }
+  .hero .hero-content p {
+    font-size: 0.95rem;
+  }
+  .tour-card {
+    padding: 2rem 1rem;
+  }
+  footer p {
+    font-size: 0.9rem;
+  }
+  footer a {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 576px) {
+  .hero {
+    height: 50vh;
+  }
+  .hero .hero-content h1 {
+    font-size: 1.5rem;
+  }
+  .hero .hero-content p {
+    font-size: 0.9rem;
+  }
+  .hero .btn-accent {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+  h2, h4 {
+    font-size: 1.2rem;
+  }
+  .card img {
+    height: 150px;
+  }
+  form {
+    padding: 0 1rem;
+  }
+  footer p {
+    font-size: 0.8rem;
+  }
+  footer a {
+    margin: 0 0.4rem;
+  }
 }/*# sourceMappingURL=main.css.map */
