@@ -1,0 +1,121 @@
+// Variables
+$primary-color: #0d3b66;     
+$secondary-color: #faf0ca;   
+$accent-color: #f95738;      
+$hero-overlay: rgba(13, 59, 102, 0.45);
+
+// Global Reset
+* { 
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0;
+  border: 0;
+ }
+
+
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8fafc;
+  color: #333;
+}
+
+// Navbar
+.navbar {
+  background-color: $primary-color !important;
+  .nav-link {
+    color: white !important;
+    &:hover { color: $accent-color !important; }
+  }
+}
+
+// Hero Section
+.hero {
+  background: url('../images/hero.png') center/cover no-repeat;
+  height: 90vh;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: $hero-overlay;
+  }
+  .hero-content {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+// Accent Button
+.btn-accent {
+  background-color: $accent-color;
+  color: white;
+  border: none;
+  &:hover {
+    background-color: darken($accent-color, 8%);
+  }
+}
+
+// Cards
+.card {
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  .btn-outline-accent {
+    border-color: $accent-color;
+    color: $accent-color;
+    &:hover {
+      background-color: $accent-color;
+      color: white;
+    }
+  }
+   img {
+    height: 200px;
+    object-fit: cover;
+  }
+}
+
+
+
+// Tour Packages
+#tours {
+  background-color: #f9fafc;
+
+  .tour-card {
+    border-radius: 15px;
+    background: white;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+
+    &:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    i {
+      color: $accent-color;
+    }
+
+    h4 {
+      color: $primary-color;
+    }
+
+    p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+  }
+}
+
+// Footer
+footer {
+  background-color: $primary-color;
+  a {
+    font-size: 1.4rem;
+    color: white;
+    transition: 0.3s;
+    &:hover {
+      color: $accent-color;
+    }
+  }
+}

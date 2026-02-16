@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f8fafc;
+  color: #333;
+}
+
+.navbar {
+  background-color: #0d3b66 !important;
+}
+.navbar .nav-link {
+  color: white !important;
+}
+.navbar .nav-link:hover {
+  color: #f95738 !important;
+}
+
+.hero {
+  background: url("../images/hero.png") center/cover no-repeat;
+  height: 90vh;
+  position: relative;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(13, 59, 102, 0.45);
+}
+.hero .hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.btn-accent {
+  background-color: #f95738;
+  color: white;
+  border: none;
+}
+.btn-accent:hover {
+  background-color: rgb(247.8058536585, 53.563902439, 16.3941463415);
+}
+
+.card {
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.card .btn-outline-accent {
+  border-color: #f95738;
+  color: #f95738;
+}
+.card .btn-outline-accent:hover {
+  background-color: #f95738;
+  color: white;
+}
+.card img {
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#tours {
+  background-color: #f9fafc;
+}
+#tours .tour-card {
+  border-radius: 15px;
+  background: white;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+#tours .tour-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+#tours .tour-card i {
+  color: #f95738;
+}
+#tours .tour-card h4 {
+  color: #0d3b66;
+}
+#tours .tour-card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+footer {
+  background-color: #0d3b66;
+}
+footer a {
+  font-size: 1.4rem;
+  color: white;
+  transition: 0.3s;
+}
+footer a:hover {
+  color: #f95738;
+}/*# sourceMappingURL=main.css.map */
